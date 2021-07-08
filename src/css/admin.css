@@ -1,0 +1,25 @@
+.Admin{
+    height:100vh !important;
+    background-color:rgb(221,221,221) ;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+
+.admin_button{
+    padding:20px;
+    background-color: #f05454;
+    color: white;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.code{
+    color: #30475e;
+
+}
+.pls_login{
+    font-weight: 700;
+    font-size: 30px;
+}

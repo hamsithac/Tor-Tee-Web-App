@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_button{
+    padding: 16px;
+    color: white;
+    background-color: #30475e;
+    border: none;
+    outline:none;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+.login_button:hover{
+    padding: 20px;
+    color: white;
+    background-color: #30475e;
+    border: none;
+    outline:none;
+    font-weight: 400;
+    cursor: pointer;
+
+}

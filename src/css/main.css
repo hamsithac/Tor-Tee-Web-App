@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    
+    flex: 1;
+}
+.main_left{
+    flex:0.3;
+}
+.main_center{
+    flex:0.4;
+}
+.main_right{
+    flex:0.3;
+}
