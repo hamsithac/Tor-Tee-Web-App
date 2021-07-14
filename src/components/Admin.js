@@ -40,11 +40,7 @@ function Admin() {
         e.preventDefault();
         db.collection('session').add({
           name:user.user?.email
-        })
-       
-       
-        
-       
+        })  
       }
 
     
@@ -57,12 +53,7 @@ function Admin() {
             code: doc.data()
             
           })));
-         
-
         })
-
-        
-
       }, [lengthc]);
 
       console.log(Codes)
@@ -73,27 +64,22 @@ function Admin() {
       for (var i = 0; i < Codes.length; i++) {
          names.push(Codes[i].code.name)
          emails[ Codes[i].id]=Codes[i].code.name
-
-      }
-      
+      }      
 
       var id=0;
-
 
       for (var i = 0; i < Codes.length; i++) {
         if(Codes[i].code.name === user.user?.email){
                id=Codes[i].id;
                dispatch(adminOn({
-               admin:user.user?.email
-          
+               admin:user.user?.email          
           }))
         }
       }
     return (
         <div className="Admin">
             {
-                    user?(
-                        
+                    user?(                        
                             id!=0 ? (
                                 <center>
                                 <Button variant="contained"  disabled={true}>Your session is  active</Button>
@@ -106,15 +92,6 @@ function Admin() {
                                 <Button color="secondary"  >Click here to go to your session</Button>
 
                                 </Link>
-
-                                
-
-                                    
-                               
-                               
-
-                                
-                                
                                 </center>
                               
                             ): 
@@ -137,18 +114,10 @@ function Admin() {
 
                                 )
                                 }
-                    
-                                
-                    
-                    
-                                
-                    
-                                </center>
+                          </center>
               
                             )
-                          
-                
-
+             
                     ):(
                         <div>
                             <center className="pls_login">
@@ -160,14 +129,7 @@ function Admin() {
 
                     )
             }
-            
-
-            
-
-            
-
-            
-           
+        
         </div>
     )
 }
